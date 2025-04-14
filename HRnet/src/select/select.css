@@ -1,0 +1,41 @@
+.select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    position: absolute;
+    background-color: white;
+    max-height: 250px;
+    overflow-y: auto;
+    width: 100%;
+    top: 65px;
+    z-index: 5;
+    border: 1px rgb(128, 128, 128, 0.7) solid;
+    box-sizing: border-box;
+}
+
+.option {
+    cursor: pointer;
+    min-height: 30px;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.option:hover {
+    background-color: rgb(128, 128, 128, 0.3);
+}
+
+.topDirection {
+    bottom: 21px;
+    top: auto !important;
+}
+
+.select:not(:has(label)) .options {
+    top: 21px;
+}

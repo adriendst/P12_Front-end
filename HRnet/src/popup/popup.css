@@ -1,0 +1,36 @@
+.popupBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: white;
+    width: 40%;
+    min-width: 200px;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.popup .closeButton {
+    position: absolute;
+    top: -15px;
+    height: 30px;
+    width: 30px;
+    right: -15px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

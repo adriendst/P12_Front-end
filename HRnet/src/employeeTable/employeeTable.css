@@ -1,0 +1,69 @@
+.tableTopBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchSection {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+td {
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+
+th {
+    padding: 10px 0;
+    border-bottom: 1px solid #111;
+}
+
+.table {
+    width: 890px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #111;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.headerName {
+    width: 100%;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrows * {
+    font-size: 8px;
+    opacity: 0.3;
+}
+
+.filterActive {
+    opacity: 1;
+}
+
+.emptyDataMessage {
+    text-align: center;
+}
+
+.onFilterColumn {
+    filter: brightness(85%);
+}
