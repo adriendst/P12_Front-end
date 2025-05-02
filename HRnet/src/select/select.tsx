@@ -42,7 +42,7 @@ function Select({
                 <div className={`${direction === "top" ? "topDirection " : ""}options`}>
                     {options.map((o: SelectOption, index) => (
                         <div
-                            className="option"
+                            className={`${value.text === o.text ? "optionSelected " : ""}option`}
                             onClick={() => {
                                 onChange(o);
                                 setIsFocus(false);

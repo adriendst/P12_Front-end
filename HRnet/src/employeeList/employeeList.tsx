@@ -1,8 +1,9 @@
 import React from "react";
 import "./employeeList.css";
 import { Link } from "react-router-dom";
-import Table from "../employeeTable/employeeTable";
 import { useAppSelector } from "../store/hooks";
+import { Table } from "table-oc";
+import 'table-oc/dist/table-oc.css'
 
 function EmployeeList() {
     const employees = useAppSelector((state) => state.employees.employees);
